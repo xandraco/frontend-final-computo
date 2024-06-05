@@ -3,7 +3,12 @@ import App from './App.vue'
 import router from './router'
 
 // Componentes
-import loginCard from './components/interface/login-card.vue'
+import loginCard from './components/login-card.vue'
+import sideBar from './components/side-bar.vue'
+import principalComponent from './components/principal-component.vue'
+import citasComponent from './components/citas-component.vue'
+import pacientesComponent from './components/pacientes-component.vue'
+import ordenesComponent from './components/ordenes-component.vue'
 
 // Vuetify
 import 'vuetify/styles'
@@ -23,5 +28,10 @@ app.use(router)
 
 // uso de componentes
 app.component('loginCard', loginCard)
+app.component('sideBar', sideBar)
+app.component('principalComponent', principalComponent)
+app.component('citasComponent',citasComponent)
+app.component('pacientesComponent', pacientesComponent)
+app.component('ordenesComponent', ordenesComponent)
 
 app.mount('#app')

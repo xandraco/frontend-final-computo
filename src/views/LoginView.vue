@@ -1,10 +1,11 @@
 <template>
-  <v-container>
+  <v-container fluid style="min-height: 100vh;" class="bg-blue-grey-lighten-3">
     <v-row>
-      <v-col>
-        <v-img src="https://tse3.mm.bing.net/th/id/OIG1.f9tYtq9hY4fP0l4_.VKi?pid=ImgGn" cover />
+      <v-col class="d-flex align-center justify-center" style="margin-top: 10vh;">
+        <h1></h1>
+        <img src="../assets/imgs/logo.png" style="max-height: 70vh;"/>
       </v-col>
-      <v-col>
+      <v-col style="margin-top: 25vh;">
         <loginCard></loginCard>
       </v-col>
     </v-row>

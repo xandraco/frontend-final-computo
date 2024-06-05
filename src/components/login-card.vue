@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card color="teal" variant="elevated">
     <v-card-title>
       ¡Bienvenido!
     </v-card-title>
@@ -20,6 +20,10 @@
           class="mt-2"
           type="submit"
           block
+          color="secondary"
+          size="x-large"
+          rounded="xl"
+          elevation="4"
         >
         Ingresar
         </v-btn>
