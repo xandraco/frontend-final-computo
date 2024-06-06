@@ -1,11 +1,11 @@
 <template>
   <v-container fluid style="height: 100vh; max-height: 100vh; overflow-y: scroll;">
     <!-- Agrega los campos de entrada para seleccionar la fecha -->
-    <label for="start-date">Desde</label>
-    <input type="date" v-model="startDate">
+    <label for="start-date" class="me-3">Desde</label>
+    <input type="date" v-model="startDate" class="me-5">
 
-    <label for="end-date">Hasta</label>
-    <input type="date" v-model="endDate">
+    <label for="end-date" class="me-3">Hasta</label>
+    <input type="date" v-model="endDate" class="me-5">
 
     <v-row>
       <v-col

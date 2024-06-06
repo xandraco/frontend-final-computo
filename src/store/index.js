@@ -12,7 +12,7 @@ export default createStore({
       patients:[],
       appointments: [],
       products: [],
-      producQuantity: 0,
+      productQuantity: 0,
     },
     mutations: {
       SET_TOKEN(state, token) {
