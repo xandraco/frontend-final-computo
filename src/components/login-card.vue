@@ -7,14 +7,15 @@
       Inicia sesión
     </v-card-subtitle>
     <v-card-text>
-      <v-form>
+      <v-form @submit.prevent="loginUser">
         <v-text-field 
           v-model="email"
           label="Correo" 
         />
         <v-text-field 
           v-model="password"
-          label="Contraseña" 
+          label="Contraseña"
+          type="password"
         />
         <v-btn 
           class="mt-2"
@@ -33,10 +34,23 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   data: () => ({
     email: '',
     password: ''
-  })
+  }),
+  methods: {
+    ...mapActions(['login']),
+    async loginUser() {
+      try {
+        await this.login({ email: this.email, password: this.password })
+        this.$router.push({ path: '/home' })
+      } catch (error) {
+        console.error('Login error:', error)
+      }
+    }
+  }
 }
 </script>

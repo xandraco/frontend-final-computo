@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
 
 // Componentes
 import loginCard from './components/login-card.vue'
@@ -25,6 +26,7 @@ const app = createApp(App)
 
 app.use(vuetify)
 app.use(router)
+app.use(store)
 
 // uso de componentes
 app.component('loginCard', loginCard)
