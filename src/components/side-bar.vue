@@ -18,9 +18,19 @@
 
     <v-row>
       <v-col class="d-flex align-center justify-center">
-        <h6>Aqui va el correo de usuario</h6>
+        <h6> {{ this.user }} </h6>
       </v-col>
     </v-row>
 
   </v-container>
 </template>
+
+<script>
+import { mapState } from 'vuex';
+
+export default {
+  computed: {
+    ...mapState(['user'])
+  }
+}
+</script>
